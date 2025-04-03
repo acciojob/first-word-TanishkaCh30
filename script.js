@@ -1,14 +1,7 @@
 function firstWord(s) {
-let word ="";
-for(let i =0 ; i<s.length ; i++){
-	if(s[i]==" "){
-		return word;
-	}
-	else{
-		word+=s[i];
-	}
-}
-}
+s = s.trim(); // Remove leading and trailing spaces
+    let index = s.indexOf(" "); // Find the first space
+    return index === -1 ? s : s.slice(0, index);
 	
 
 
